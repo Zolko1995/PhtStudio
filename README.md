@@ -1,12 +1,11 @@
-# Arduino_HomeAutomation
+# Lazarus
 
-## Home automation and alarm system using the Arduino MEGA REV 2560
+## A basic photo editing software
 
-Heres's an image of the circuit
+Heres's an image of the GUI
 
 ![HA_circuit](GUI.png)
 
-The house model
 
 - [X] Object Pascal
 - [X] Lazarus
