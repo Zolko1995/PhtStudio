@@ -1,0 +1,577 @@
+object Form1: TForm1
+  Left = 1796
+  Height = 665
+  Top = 175
+  Width = 1053
+  Caption = 'Form1'
+  ClientHeight = 665
+  ClientWidth = 1053
+  Color = clMedGray
+  DoubleBuffered = True
+  OnCreate = FormCreate
+  ParentDoubleBuffered = False
+  LCLVersion = '2.0.4.0'
+  object Image1: TImage
+    Left = 24
+    Height = 368
+    Top = 48
+    Width = 376
+    OnClick = Image1Click
+    OnMouseDown = Image1MouseDown
+    OnMouseEnter = Image1MouseEnter
+    OnMouseLeave = Image1MouseLeave
+    OnMouseMove = Image1MouseMove
+  end
+  object Button1: TButton
+    Left = 46
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Open I1'
+    Color = clGrayText
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 288
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Clear'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 368
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Save'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 208
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Copy'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 808
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'RED'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 808
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'GREEN'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 808
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'BLUE'
+    OnClick = Button7Click
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 808
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'GRAY'
+    OnClick = Button8Click
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 808
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'B/W'
+    OnClick = Button9Click
+    TabOrder = 8
+  end
+  object Button10: TButton
+    Left = 889
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'INVERT'
+    OnClick = Button10Click
+    TabOrder = 9
+  end
+  object Button11: TButton
+    Left = 808
+    Height = 25
+    Top = 240
+    Width = 155
+    Caption = 'HISTOGRAM'
+    OnClick = Button11Click
+    TabOrder = 10
+  end
+  object Image3: TImage
+    Left = 24
+    Height = 120
+    Top = 488
+    Width = 185
+    OnClick = Image3Click
+  end
+  object Image4: TImage
+    Left = 216
+    Height = 120
+    Top = 488
+    Width = 184
+  end
+  object Image5: TImage
+    Left = 408
+    Height = 120
+    Top = 488
+    Width = 184
+  end
+  object Image6: TImage
+    Left = 600
+    Height = 120
+    Top = 488
+    Width = 185
+  end
+  object StaticText1: TStaticText
+    Left = 96
+    Height = 17
+    Top = 640
+    Width = 33
+    Caption = 'GRAY'
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 11
+  end
+  object StaticText2: TStaticText
+    Left = 296
+    Height = 17
+    Top = 640
+    Width = 33
+    Caption = 'RED'
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 12
+  end
+  object StaticText3: TStaticText
+    Left = 488
+    Height = 17
+    Top = 640
+    Width = 41
+    Caption = 'GREEN'
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 13
+  end
+  object StaticText4: TStaticText
+    Left = 680
+    Height = 17
+    Top = 640
+    Width = 33
+    Caption = 'BLUE'
+    Color = clSilver
+    ParentColor = False
+    TabOrder = 14
+  end
+  object Button12: TButton
+    Left = 808
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'GRAYSCALE'
+    OnClick = Button12Click
+    TabOrder = 15
+  end
+  object ScrollBar1: TScrollBar
+    Left = 888
+    Height = 17
+    Top = 176
+    Width = 72
+    PageSize = 0
+    TabOrder = 16
+    OnChange = ScrollBar1Change
+  end
+  object ScrollBar2: TScrollBar
+    Left = 889
+    Height = 16
+    Top = 49
+    Width = 72
+    PageSize = 0
+    TabOrder = 17
+    OnChange = ScrollBar2Change
+  end
+  object Button13: TButton
+    Left = 888
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'WARP'
+    OnClick = Button13Click
+    TabOrder = 18
+  end
+  object ScrollBar3: TScrollBar
+    Left = 888
+    Height = 16
+    Top = 80
+    Width = 74
+    PageSize = 0
+    TabOrder = 19
+    OnChange = ScrollBar2Change
+  end
+  object ScrollBar4: TScrollBar
+    Left = 888
+    Height = 16
+    Top = 112
+    Width = 74
+    PageSize = 0
+    TabOrder = 20
+    OnChange = ScrollBar2Change
+  end
+  object Button14: TButton
+    Left = 966
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Exit'
+    OnClick = Button14Click
+    TabOrder = 21
+  end
+  object Shape1: TShape
+    Left = 800
+    Height = 650
+    Top = 40
+    Width = 249
+    OnChangeBounds = Shape1ChangeBounds
+  end
+  object StaticText5: TStaticText
+    Left = 896
+    Height = 17
+    Top = 64
+    Width = 65
+    Caption = 'LIGHTNESS'
+    TabOrder = 22
+  end
+  object StaticText6: TStaticText
+    Left = 898
+    Height = 17
+    Top = 96
+    Width = 65
+    Caption = 'CONTRAST'
+    TabOrder = 23
+  end
+  object StaticText7: TStaticText
+    Left = 903
+    Height = 17
+    Top = 128
+    Width = 65
+    Caption = 'GAMMA'
+    TabOrder = 24
+  end
+  object Shape2: TShape
+    Left = 8
+    Height = 40
+    Top = 0
+    Width = 1042
+    OnChangeBounds = Shape2ChangeBounds
+  end
+  object Label3: TLabel
+    Left = 809
+    Height = 15
+    Top = 304
+    Width = 7
+    Caption = 'R'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 808
+    Height = 15
+    Top = 336
+    Width = 8
+    Caption = 'G'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 808
+    Height = 15
+    Top = 368
+    Width = 7
+    Caption = 'B'
+    ParentColor = False
+  end
+  object Shape3: TShape
+    Left = 8
+    Height = 49
+    Top = 424
+    Width = 1041
+    OnChangeBounds = Shape3ChangeBounds
+  end
+  object Shape4: TShape
+    Left = 0
+    Height = 673
+    Top = 0
+    Width = 17
+  end
+  object Label1: TLabel
+    Left = 199
+    Height = 15
+    Top = 440
+    Width = 45
+    Caption = 'IMAGE 1'
+    Color = clSilver
+    ParentColor = False
+    Transparent = False
+  end
+  object Label2: TLabel
+    Left = 592
+    Height = 15
+    Top = 440
+    Width = 45
+    Caption = 'IMAGE 2'
+    Color = clSilver
+    ParentColor = False
+    Transparent = False
+  end
+  object Button17: TButton
+    Left = 808
+    Height = 25
+    Top = 272
+    Width = 154
+    Caption = 'EDGE DETECTION'
+    OnClick = Button17Click
+    TabOrder = 25
+  end
+  object Edit1: TEdit
+    Left = 856
+    Height = 23
+    Top = 304
+    Width = 24
+    OnChange = Edit1Change
+    TabOrder = 26
+  end
+  object Edit2: TEdit
+    Left = 896
+    Height = 23
+    Top = 304
+    Width = 23
+    OnChange = Edit2Change
+    TabOrder = 27
+  end
+  object Edit3: TEdit
+    Left = 934
+    Height = 23
+    Top = 304
+    Width = 25
+    TabOrder = 28
+  end
+  object Edit4: TEdit
+    Left = 856
+    Height = 23
+    Top = 336
+    Width = 24
+    TabOrder = 29
+  end
+  object Edit5: TEdit
+    Left = 896
+    Height = 23
+    Top = 336
+    Width = 24
+    TabOrder = 30
+  end
+  object Edit6: TEdit
+    Left = 934
+    Height = 23
+    Top = 336
+    Width = 26
+    TabOrder = 31
+  end
+  object Edit7: TEdit
+    Left = 856
+    Height = 23
+    Top = 368
+    Width = 24
+    TabOrder = 32
+  end
+  object Edit8: TEdit
+    Left = 896
+    Height = 23
+    Top = 368
+    Width = 24
+    TabOrder = 33
+  end
+  object Edit9: TEdit
+    Left = 935
+    Height = 23
+    Top = 368
+    Width = 24
+    TabOrder = 34
+  end
+  object Shape5: TShape
+    Left = 0
+    Height = 50
+    Top = 623
+    Width = 1073
+  end
+  object Image2: TImage
+    Left = 408
+    Height = 369
+    Top = 47
+    Width = 384
+    OnClick = Image2Click
+  end
+  object Button19: TButton
+    Left = 128
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Open I2'
+    OnClick = Button19Click
+    TabOrder = 35
+  end
+  object Button20: TButton
+    Left = 968
+    Height = 25
+    Top = 344
+    Width = 74
+    Caption = 'Merge 1'
+    OnClick = Button20Click
+    TabOrder = 36
+  end
+  object ProgressBar1: TProgressBar
+    Left = 814
+    Height = 20
+    Top = 396
+    Width = 148
+    OnContextPopup = ProgressBar1ContextPopup
+    TabOrder = 37
+  end
+  object ScrollBar5: TScrollBar
+    Left = 969
+    Height = 10
+    Top = 302
+    Width = 73
+    PageSize = 0
+    TabOrder = 38
+    OnChange = ScrollBar5Change
+  end
+  object Button21: TButton
+    Left = 968
+    Height = 25
+    Top = 80
+    Width = 73
+    Caption = 'Axel 2'
+    OnClick = Button21Click
+    TabOrder = 39
+  end
+  object Button22: TButton
+    Left = 968
+    Height = 25
+    Top = 320
+    Width = 73
+    Caption = 'Zoom'
+    OnClick = Button22Click
+    TabOrder = 40
+  end
+  object Button23: TButton
+    Left = 968
+    Height = 25
+    Top = 112
+    Width = 73
+    Caption = 'Tilt 1'
+    OnClick = Button23Click
+    TabOrder = 41
+  end
+  object Button24: TButton
+    Left = 968
+    Height = 25
+    Top = 144
+    Width = 73
+    Caption = 'Tilt 2'
+    OnClick = Button24Click
+    TabOrder = 42
+  end
+  object Button25: TButton
+    Left = 968
+    Height = 25
+    Top = 176
+    Width = 73
+    Caption = 'Tilt 3'
+    OnClick = Button25Click
+    TabOrder = 43
+  end
+  object Button26: TButton
+    Left = 968
+    Height = 25
+    Top = 208
+    Width = 73
+    Caption = 'Mirror'
+    OnClick = Button26Click
+    TabOrder = 44
+  end
+  object Button27: TButton
+    Left = 968
+    Height = 25
+    Top = 240
+    Width = 73
+    Caption = 'Flip'
+    OnClick = Button27Click
+    TabOrder = 45
+  end
+  object Button28: TButton
+    Left = 968
+    Height = 25
+    Top = 272
+    Width = 72
+    Caption = 'Distort'
+    OnClick = Button28Click
+    TabOrder = 46
+  end
+  object Button29: TButton
+    Left = 968
+    Height = 25
+    Top = 48
+    Width = 72
+    Caption = 'Axel1'
+    OnClick = Button29Click
+    TabOrder = 47
+  end
+  object Button15: TButton
+    Left = 968
+    Height = 25
+    Top = 368
+    Width = 75
+    Caption = 'Merge 2'
+    OnClick = Button15Click
+    TabOrder = 48
+  end
+  object Button16: TButton
+    Left = 968
+    Height = 25
+    Top = 391
+    Width = 75
+    Caption = 'Merge 3'
+    OnClick = Button16Click
+    TabOrder = 49
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 1008
+    top = 544
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    left = 48
+    top = 680
+  end
+end
